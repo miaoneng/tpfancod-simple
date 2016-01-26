@@ -1,0 +1,15 @@
+[Unit]
+Description=tpfancod is a fan control daemon for ThinkPad notebooks
+After=syslog.target
+
+[Service]
+Type=oneshot
+ExecStart=/opt/tpfancod/tpfancod-simple.py
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
+
+
+
+
